@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>デザイン候補選択 | アクティフス在宅ケア株式会社</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+    background: #f5f5f0;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  h1 { font-size: 1.4rem; text-align: center; margin-bottom: 8px; color: #555; font-weight: 400; }
+  p.sub { text-align: center; color: #888; font-size: 0.9rem; margin-bottom: 48px; }
+  .cards { display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; max-width: 1100px; }
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 320px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    color: inherit;
+  }
+  .card:hover { transform: translateY(-6px); box-shadow: 0 12px 36px rgba(0,0,0,0.14); }
+  .card-thumb {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 0.05em;
+  }
+  .thumb1 { background: linear-gradient(135deg, #E8A87C 0%, #6B8F71 100%); }
+  .thumb2 { background: linear-gradient(135deg, #9B8EA8 0%, #C4956A 100%); }
+  .thumb3 { background: linear-gradient(135deg, #4A7C6F 0%, #D4A853 100%); }
+  .card-body { padding: 24px; }
+  .card-body h2 { font-size: 1.1rem; margin-bottom: 8px; }
+  .card-body p { font-size: 0.85rem; color: #777; line-height: 1.7; }
+  .badge {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  .b1 { background: #FFF0E6; color: #C47840; }
+  .b2 { background: #F0ECF8; color: #7B6A96; }
+  .b3 { background: #E6F4F0; color: #3A6A5E; }
+</style>
+</head>
+<body>
+  <h1>アクティフス在宅ケア株式会社 — デザイン候補</h1>
+  <p class="sub">3つの候補からお好みのデザインをお選びください</p>
+  <div class="cards">
+    <a class="card" href="design1.html">
+      <div class="card-thumb thumb1">Design 1</div>
+      <div class="card-body">
+        <h2>温かいハニー系</h2>
+        <p>オレンジ×セージグリーンの組み合わせ。<br>ぬくもりと自然さを感じる、親しみやすいデザイン。</p>
+        <span class="badge b1">暖かい・親しみやすい</span>
+      </div>
+    </a>
+    <a class="card" href="design2.html">
+      <div class="card-thumb thumb2">Design 2</div>
+      <div class="card-body">
+        <h2>優しいラベンダー系</h2>
+        <p>ラベンダー×キャラメルの落ち着いた配色。<br>柔らかく穏やか、安心感を与えるデザイン。</p>
+        <span class="badge b2">穏やか・安心感</span>
+      </div>
+    </a>
+    <a class="card" href="design3.html">
+      <div class="card-thumb thumb3">Design 3</div>
+      <div class="card-body">
+        <h2>ナチュラルフォレスト系</h2>
+        <p>ディープティール×ゴールドの品格ある配色。<br>誠実さと信頼感を伝える上品なデザイン。</p>
+        <span class="badge b3">誠実・信頼感</span>
+      </div>
+    </a>
+  </div>
+</body>
+</html>
